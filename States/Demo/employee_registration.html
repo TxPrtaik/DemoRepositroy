@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Empolyee Registration</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			font-family: arial;
+		}
+		#container{
+			height: 650px;
+			width: 50%;
+			margin-left: 26%;
+	
+		float: left;
+		border: 1px solid black;
+		}
+		h1{
+			margin-top: 20px;
+		}
+		#name{
+			height: 200px;
+			width: 50%;
+		    border-top: 1px solid black;
+		    border-bottom: 1px solid black;
+		    border-right: 1px solid black;
+			float: left;
+		}
+		#image{
+width: 49.7%;
+height: 200px;
+border-top: 1px solid black ;
+border-bottom: 1px solid black;
+float: left;
+		}
+		.inp{
+			width: 14rem;
+			height: 1.6rem;
+			margin-left: 20px;
+			margin-top: 20px;
+			border-radius: 10px;
+			border:1px solid black ;
+		}
+	</style>
+</head>
+<body>
+	<form action="path" method="get" enctype="multipart/form-data">
+<div id="container">
+	<center><h1><u>Employee Registration</u></h1></center>
+	<div id="name">
+		<label style="margin-left:20px; margin-top:10px;">First Name:</label><br>
+		<input type="text" name="name" id="firstname" required class="inp"><br><br>
+		<label style="margin-left: 20px; margin-top:10px;">Last Name:-</label><br>
+		<input type="text" name="lastname" id="lastname" required class="inp"><br><br>
+
+	</div>
+    <div id="image">
+    	<textarea rows="8" cols="12" placeholder="Your Photo" disabled style="margin-left:30%; margin-top: 2%;"></textarea>
+    	<input type="file" name="photo" id="photo" style="margin-left: 33%; margin-top: 20px;">
+
+    </div>
+<div id="address" style="float:left; width:100%; height:200px;  border-bottom: 1px solid black;">
+	<label style="margin-left:10px">Address:-</label>
+	<input type="text" name="address" minlength="10" required style=" width:97%; height: 1.8rem; margin-left: 5px; border-radius: 10px; border:1px solid black; outline: none; margin-top:5px ;" >
+<label style="margin-left:10px; margin-top:5px">Pin Code:-</label><br>
+<input class="inp" type="number" style="margin-top:5px; margin-left: 5px;"><br>
+<div style="width: 50%; height:90px; float: left; margin-top: 1px; float:left;">
+	<label>Identity Document:-</label><br>
+	<input type="checkbox" name="" style="margin-top:20px" checked><b>Adhaar</b>
+		<input type="checkbox" name="" style="margin-top:20px"><b>PAN</b>
+			<input type="checkbox" name="" style="margin-top:20px"><b>VOTER ID</b>
+</div>
+<div style="width: 50%; height:90px;  float: left; margin-top: 1px; float: left;">
+	<label style="margin-left:10px; margin-top:5px">Card No.:-</label><br>
+<input class="inp" type="number" style="margin-top:10px; margin-left: 5px;"><br>
+</div>
+</div>
+<div style="height: 168px; width: 50%;float: left; border-right: 1px solid black;">
+	<label style="margin-left:10px; margin-top:10px" >Graduation In:-</label><br>
+	<select required style="margin-top: 20px; height: 1.8rem; width:6rem; border-radius: 10px; margin-left:10px;">
+		<option>Choose Field</option>
+		<option>B.Sc</option>
+		<option>M.Sc</option>
+		<option>B.Tech</option>
+				<option>M.Tech</option>
+				<option>B.C.A</option>
+				<option>M.C.A</option>
+
+	</select><br>
+		<label style="margin-left:10px; margin-top:5px">University Name:-</label><br>
+<input class="inp" type="text" style="margin-top:10px; margin-left: 5px;"><br>
+</div>
+<div style="height: 168px; width: 49.8%;  float: left;">
+	
+		<label>Technologies:-</label><br>
+	<input type="checkbox" name="" style="margin-top:20px" checked><b>HTML</b>
+		<input type="checkbox" name="" style="margin-top:20px"><b>CSS</b>
+			<input type="checkbox" name="" style="margin-top:20px"><b>JavaScript</b>
+			<input type="checkbox" name=""  style="margin-top:20px"><b>Java</b>
+			<input type="checkbox" name=""  style="margin-top:20px"><b>MySql</b>
+			<input type="checkbox" name=""  style="margin-top:20px"><b>MongoDb</b>
+
+</div>
+
+</div>
+<button type="submit">Submit</button>
+ </form>
+</body>
+</html>

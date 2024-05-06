@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form tag</title>
+</head>
+<body>
+	<!--from tag is used take information from user-->
+	<!--enctype attribute is used to send files-->
+<form action="path" method="post/get" enctype="multipart/form-data">
+<fieldset>
+	<legend>
+		Personal Information
+	</legend>
+	<label>Name:-</label>
+	<!--readonly attribute does not allow to edit information in input-->
+	<!--autofocus attributes choose the input field automatically-->
+	<!--autocomplete attribute allow us to to fill form by suggestions-->
+	<input type="text" name="sname" placeholder="Your name" readonly><br><br>
+	<label>Email:-</label>
+	<input type="email" name="semail" placeholder="Your Email" disabled><br><br>
+	<label>Phone:-</label>
+	<input type="number" name="snumber" placeholder="Contact Number"  autofocus autocomplete="off"><br><br>
+	<label>Gender:-</label>
+	<input type="radio" name="gender" value="male"><b>Male</b>
+<input type="radio" name="gender" value="female"><b>Female</b>
+	<br><br>
+	<label>Profile Photo:-</label>
+	<input type="file" name="photo" ><br><br>
+	<label>DOB:-</label>
+	<input type="date" name="dob"  >
+
+
+
+</fieldset>
+
+<fieldset>
+	<legend>Address & Course Details & Login Details</legend>
+	<label>State</label>
+	<select>
+		<option>Select option</option>
+		<!--selected attribute is used to auto select given option-->
+		<option selected>maha</option>
+		<option>Bihar</option>
+		<option>Rajastabn</option>
+	</select><br><br>
+	<label>Address:-</label>
+	<textarea rows="5" cols="5"  > </textarea><br><br>
+	<label>PinCode:-</label>
+	<input type="number" min="100000" max="999999"><br><br>
+	<label>Course Details:-</label>
+	<label>Html</label><input type="checkbox">
+    	<label>Css</label><input type="checkbox">
+    		<label>JavaScript</label><input type="checkbox">
+    		<!--check attribute in checkbox type input is used to autoslect given value-->
+    			<label>Java</label><input type="checkbox" checked><br><br>
+    			<label>Username:-</label>
+    			<input type="text" name="" minlength="8" required><br><br>
+    			<label>Password:-</label>
+    			<input type="password" pattern="(0-9){10}"><br><br>
+    			<button type="reset">Reset</button>
+    			<button type="submit">Submit</button>
+</fieldset>
+
+</form>
+</body>
+</html>

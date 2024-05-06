@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic tags</title>
+	<style type="text/css">
+		.blue{
+         background-color: blueviolet;
+		}
+		.pink{
+			background-color: pink;
+		}
+
+	</style>
+</head>
+<p>lorem</p>
+<body background="nav.jpg">
+<!--bold tag-->
+<b>Welcome Html</b></br>
+<!--this tag is used to get word in bold-->
+<!--underline tag-->
+<u>Welcome Html</u></br>
+<!-- this tag is used to give underline in text-->
+<!--delete tag-->
+<del>Welcome Html</del></br></br>
+<!--this tag is used to give line in middle of text-->
+<!--italic tag-->
+<i>Welcome Html</i></br>
+<!--this tag is used to make text look italic-->
+<!--small tag-->
+<h1>Welcome<small>Html</small></h1>
+<!--this tag make its text small-->
+<!--big tag-->
+<h1>Welcome<big>Html</big></h1>
+<!--this tag make its text big by 2px-->
+<!--mark tag-->
+<h1>Welcome<mark>Html</mark></h1>
+<!--this tag is used to highlite text-->
+<!--break tag-->
+<h1>Welcome <br/>Html</h1>
+<!--this tag is used to break line and it is self closing tag-->
+<!--center tag-->
+<center>Welcome Html</center>
+<!--this tag align its text in center-->
+<!--horzontalline tag-->
+<h1>Welcome<hr/> Html</h1>
+<!--this tag is used to give underline and it is self closing tag-->
+<!--superscript tag-->
+<h1>x<sup>2</sup></h1>
+<!--this tag make its text as superscript-->
+<!--subscript tag-->
+<h1>x<sub>2</sub></h1>
+<!--this tag make its text as subscript-->
+<!--span tag-->
+<h1><span style="color: red;">H</span>tml</h1>
+<!-- this is empty tag-->
+<script type="text/javascript">
+	
+	let timer=null;
+	let cond=true;
+   function changeColor(){
+   	if(cond==true){
+     document.body.style.backgroundColor="violet";
+       cond=false;
+ }
+ else{
+ 	document.body.style.backgroundColor="pink";
+ 	cond=true;
+ }
+   	}
+   function time(){
+    if(timer!=null){
+    	clearInterval(timer);
+    }
+    timer=setInterval(changeColor,1000);
+
+   }
+
+time();
+
+</script>
+</body>
+</html>

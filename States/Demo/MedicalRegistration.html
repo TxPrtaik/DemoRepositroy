@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Medical Registration</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		#background{
+			font-family: arial;
+			width: 100%;
+			min-height: 100vh;
+				background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url(https://t3.ftcdn.net/jpg/02/16/47/22/240_F_216472247_cT66WDoS0fp1s3wC7eaykMJNDGVbOBPq.jpg);
+				background-size: cover;
+				float: left;
+		}
+		form{
+					font-family: arial;
+			width: 50%;
+			height: 650px;
+			margin-left: 25%;
+					margin-top: 10px;
+			border-radius: 10px;
+          box-shadow: 0px 0px 5px white;
+		}
+		h1{
+					font-family: arial;
+			color: white;
+			filter: drop-shadow(2px 2px 2px black);
+
+		}
+		.names{
+			width: 16rem;
+			height: 2rem;
+			margin-left: 30px;
+			margin-top: 10px;
+			border-radius: 10px;
+			outline: none;
+					border: 0;
+
+		}
+fieldset{
+	filter: drop-shadow(3px 3px 3px black);
+	border: 1px solid white;
+	color: white;
+	border-radius: 15px;
+}
+.add{
+width: 16rem;
+height: 2rem;
+margin-top: 5px;
+margin-left: 30px;
+border: none;
+outline: 0;
+border-radius: 10px;
+
+}
+	</style>
+
+
+</head>
+<body>
+<div id="background">
+
+	<form action="path" method="get" enctype="multipart/form-data">
+		<center><h1><u>Medical Registration</u></h1></center>
+		<div style=" width: 100%; height: 200px; " >
+			<fieldset style="height:80%; border-radius: 15px; color: white; border: 1px solid white ;" id="names">
+				
+				<legend> Patient Name & Personal Detials</legend>
+				<input type="text" placeholder="First Name" required minlength="3" class="names" style="margin-left:45px">
+					<input type="text" placeholder="Last Name" required minlength="3" class="names">
+					<input type="number" name="phonenumber" required placeholder="Phonenumber" class="names" style="margin-left:45px">
+					<label style="margin-left:20px">Gender:-</label>
+					<input type="radio" name="gender" value="male" ><b>Male</b>
+					<input type="radio" name="gender" value="female"><b>Female</b>
+					<br><br>
+					<label >DOB:-</label>
+					<input type="date" name="dob" class="names" style="margin-top:0px; margin-left: 0;">
+			</fieldset>
+
+					</div>
+					<fieldset>
+						<legend>Address Details</legend>
+						<input type="text" name="" required minlength="10" placeholder="Street Name" style="width:90%; height: 2rem; margin-left: 30px;" class="add">
+						<input type="text" name="" class="add" placeholder="City">
+						<input type="number" name="" class="add" placeholder="pincode" required style="margin-left:60px">
+
+
+					</fieldset>
+					<fieldset style="margin-top:20px">
+						<legend>Diseas Detials</legend>
+                       <textarea cols="84" rows="10" style="border-radius: 15px; margin-left: 5px; outline: none; border: 0; box-shadow: 0px 0px 4px 0px black;" placeholder="Patient Dignosed with"></textarea>
+					</fieldset>
+<button type="submit" style="margin-top: 15px; height:1.6rem; width: 6rem; margin-left:80%;
+filter: drop-shadow(2px 2px 2px black); background-color:green ;border-radius: 8px; color:white; border:0;">Submit</button>
+	</form>
+</div>
+</body>
+</html>

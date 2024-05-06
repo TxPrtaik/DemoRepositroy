@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table tag</title>
+</head>
+<body>
+<!-- table tag is used to store data in table format-->
+<table border="1" bgcolor="red" width="100%" cellpadding="20px" cellspacing="20px">
+	<tr bgcolor="yellow">
+		<th ><marquee>Name</marquee></th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Contact</th>
+
+	</tr>
+<tr bgcolor="yellow">
+   <td>Pratik</td>
+   <td>19</td>
+   <td><marquee>epratik@gamil.com</marquee></td>
+   <td>1234</td>	
+ 
+
+</tr>
+<!-- here thead is used to declare head part of the table and tbody represents the body of the table and tfoot represents the foot part of the table-->
+<!--rowspan attribute increases the particular row size and colspan increases the particular column size-->
+<table border="1" width="100%" cellspacing="20px"  cellpadding="20px"> 
+<thead>
+	<tr>
+		<th>Sr.No</th>
+		<th>Item</th>
+		<th>Price</th>
+	</tr>
+
+</thead>
+<tbody>
+	<tr>
+		<td>001</td>
+		<td>Mobile</td>
+		<td rowspan="2">8000</td>
+	</tr>
+   <tr>
+   	<td>002</td>
+   	<td>Charger</td>
+   	
+   </tr>
+   <tr>
+   	<td>003</td>
+   	<td>Laptop</td>
+   	<td>20000</td>
+   </tr>
+</tbody>
+<tfoot>
+	<tr>
+
+		<td colspan="2">Gross price</td>
+		<td>28000</td>
+	</tr>
+
+</tfoot>
+
+</table>
+</table>
+</body>
+</html>
